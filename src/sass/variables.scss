@@ -1,0 +1,109 @@
+// Font-awesome
+// $fa-font-path: '..fonts/webfonts';
+
+// Custom
+$secondary: rgba(237, 0, 162, 1);
+
+// Initial
+$black: #000;
+$grey-dark: #414141;
+$size-1: rem-calc(20);
+$size-2: rem-calc(18);
+$size-3: rem-calc(17);
+$size-4: rem-calc(16);
+$size-5: rem-calc(15);
+$size-6: rem-calc(14);
+$size-7: rem-calc(12);
+$speed: 0.2s;
+
+// Derived
+$primary: #5ee045;
+$light: rgba(232, 230, 230, 0.4);
+$background: #fff;
+$border: rgba(199, 199, 199, 1);
+$border-hover: rgba(232, 230, 230, 1);
+$text: #00303f;
+$text-light: #999997;
+$text-strong: $text;
+$link: $text;
+$link-hover: $link;
+$link-hover-border: $link-hover;
+$link-focus: $link-hover;
+$link-focus-border: $link-focus;
+
+// Generic
+$body-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$body-size: 14px;
+$body-weight: 500;
+$hr-background-color: $border-hover;
+$hr-height: 1px;
+$strong-weight: 600;
+
+// Components
+$column-gap: rem-calc(10);
+$section-padding: rem-calc(20) 0;
+$footer-background-color: transparent;
+$control-padding-vertical: rem-calc(3);
+$control-padding-horizontal: rem-calc(10);
+$label-color: $text;
+$label-weight: 600;
+$input-color: $text;
+$input-background-color: transparent;
+$input-border-color: $border;
+$input-shadow: none;
+$input-hover-color: $input-color;
+$input-hover-border-color: $input-border-color;
+$input-focus-color: $input-hover-color;
+$input-focus-border-color: $text-light;
+$input-focus-box-shadow-size: 0 0 0;
+$input-icon-color: $input-border-color;
+$input-icon-active-color: $input-color;
+$box-radius: 4px;
+$box-shadow: 0 0 1px $text-light;
+$box-padding: rem-calc(30);
+$button-color: $text;
+$button-background-color: transparent;
+$button-border-color: $border;
+$button-padding-vertical: rem-calc(6);
+$button-padding-horizontal: rem-calc(15);
+$button-hover-color: $button-color;
+$button-hover-border-color: $input-focus-border-color;
+$button-focus-box-shadow-size: 0 0 0;
+$button-active-color: $button-color;
+$button-active-border-color: $button-border-color;
+$button-text-hover-background-color: transparent;
+$button-text-hover-color: $button-color;
+$content-heading-color: $text;
+$content-heading-line-height: 1.25;
+$content-table-cell-border: 1px solid $border-hover;
+$content-table-cell-padding: 1.5rem rem-calc(10);
+$content-table-cell-heading-color: $text;
+$content-table-head-cell-color: $content-table-cell-heading-color;
+$content-table-foot-cell-color: $content-table-head-cell-color;
+$table-color: $text;
+$table-cell-border: 1px solid $border-hover;
+$table-cell-padding: 1.5rem rem-calc(5);
+$table-cell-heading-color: $table-color;
+$table-head-cell-color: $table-cell-heading-color;
+$table-foot-cell-color: $table-head-cell-color;
+$table-foot-cell-border-width: 0;
+$title-color: $content-heading-color;
+$title-size: $size-1;
+$title-line-height: $content-heading-line-height;
+$menu-item-hover-color: $text;
+$menu-item-hover-background-color: transparent;
+$modal-background-background-color: rgba($text-light, 0.65);
+$modal-content-width: rem-calc(760);
+$modal-content-spacing-mobile: rem-calc(60);
+$modal-content-spacing-tablet: rem-calc(120);
+$navbar-background-color: transparent;
+$navbar-box-shadow-size: 0 0 0;
+$navbar-box-shadow-color: transparent;
+$navbar-height: rem-calc(54);
+$navbar-item-color: $text-light;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $text;
+$navbar-item-img-max-height: rem-calc(40);
+$navbar-burger-color: $link;
+$navbar-tab-hover-border-bottom-color: transparent;
+$navbar-tab-active-border-bottom-color: $secondary;

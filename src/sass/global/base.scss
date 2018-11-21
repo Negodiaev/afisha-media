@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+}
+a {
+    transition: all $speed $easing;
+}
+svg {
+    &.custom-icon {
+        fill: currentColor;
+        transition: color $speed $easing;
+    }
+}
+.sticky-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;
+}
+.container {
+    padding-left: $column-gap;
+    padding-right: $column-gap;
+}
+.main {
+    padding-top: rem-calc(20);
+}
+.background-box {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+.background-box__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+.background-box__image--overlay {
+    opacity: 0.6;
+}
+.secondary-link {
+    color: $secondary;
+}

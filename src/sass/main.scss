@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+// Custom mixins
+@import 'mixins/rem-calc';
+@import 'mixins/placeholder';
+
+// Custom variables
+@import 'variables';
+
+// Bulma parts
+@import '~bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/base/_all.sass';
+@import '~bulma/sass/grid/columns.sass';
+@import '~bulma/sass/layout/hero.sass';
+@import '~bulma/sass/layout/section.sass';
+@import '~bulma/sass/layout/footer.sass';
+@import '~bulma/sass/elements/form.sass';
+@import '~bulma/sass/elements/container.sass';
+@import '~bulma/sass/elements/box.sass';
+@import '~bulma/sass/elements/button.sass';
+@import '~bulma/sass/elements/content.sass';
+@import '~bulma/sass/elements/icon.sass';
+@import '~bulma/sass/elements/table.sass';
+@import '~bulma/sass/elements/title.sass';
+@import '~bulma/sass/components/level.sass';
+@import '~bulma/sass/components/menu.sass';
+@import '~bulma/sass/components/modal.sass';
+@import '~bulma/sass/components/navbar.sass';
+@import '~bulma/sass/components/panel.sass';
+
+// Vendor components
+// @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~tiny-slider/src/tiny-slider';
+
+// Custom base
+@import 'global/base';
+@import 'global/forms';
+@import 'global/content';
+
+// Custom components
+@import 'components/header';
+@import 'components/hero';
+@import 'components/footer';
+
+@import 'components/login';
+@import 'components/sidebar-menu';
+@import 'components/modal';
+
+// Pages
+@import 'pages/calc';
+@import 'pages/categories';
+@import 'pages/contacts';
+@import 'pages/cart';

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Онлайн-калькулятор | Афиша-Медиа</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600"
+            rel="stylesheet"
+            media="all and (min-width: 960px)"
+        />
+    <link href="css/main.css" rel="stylesheet"></head>
+
+    <body>
+        <div class="sticky-footer">
+            <header class="header">
+                <nav class="navbar" aria-label="main navigation">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="/">
+                                <img src="images/logo.png" width="189" height="40" alt="" />
+                            </a>
+                            <a
+                                role="button"
+                                class="navbar-burger burger"
+                                aria-label="menu"
+                                aria-expanded="false"
+                                data-target="navbar-menu"
+                            >
+                                <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <!-- /.navbar-brand -->
+                        <div id="navbar-menu" class="navbar-menu">
+                            <div class="navbar-end nav-menu is-flex-touch">
+                                <div class="navbar-item nav-item is-tab is-active">
+                                    <a href="calc.html" class="nav-link">Онлайн-калькулятор</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="directory.html" class="nav-link">Справочник</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="contacts.html" class="nav-link">Контакты</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="#" class="nav-link">Прайс</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="cart.html" class="nav-link level is-mobile">
+                                        <div class="level-left is-mobile">
+                                            <svg
+                                                viewBox="28.500001907348633 37.5 142.99899291992188 124.99998474121094"
+                                                height="25"
+                                                width="28"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                data-type="color"
+                                                role="img"
+                                                preserveAspectRatio="xMidYMid meet"
+                                            >
+                                                <g>
+                                                    <path
+                                                        d="M93.331 142.92c-5.392 0-9.78 4.392-9.78 9.79 0 5.399 4.388 9.79 9.78 9.79 5.392 0 9.779-4.392 9.779-9.79 0-5.399-4.387-9.79-9.779-9.79z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                    <path
+                                                        d="M129.502 142.92c-5.392 0-9.779 4.392-9.779 9.79 0 5.399 4.386 9.79 9.779 9.79 5.392 0 9.78-4.392 9.78-9.79 0-5.399-4.387-9.79-9.78-9.79z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                    <path
+                                                        d="M63.386 66.861c-.19 0-.377.012-.561.037l-5.34-17.343-28.696-11.967c-.095-.039-.192-.056-.289-.088v9.113l22.092 9.212 23.849 77.455h76.515l20.543-66.42H63.386zm81.355 57.977H80.665L65.414 75.304h94.648l-15.321 49.534z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <div
+                                                class="link-sum link-sum--right is-size-5 has-text-link has-text-right"
+                                            >
+                                                <span class="link-sum__number">0</span> руб
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="#" class="nav-link nav-link--secondary is-size-6"
+                                        >name@domen.ru</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-menu -->
+                    </div>
+                    <!-- /.container -->
+                </nav>
+                <!-- /.navbar -->
+            </header>
+            <!-- /.header -->
+            <main class="main">
+                <div class="container">
+                    <div class="infoblock content has-background-light"><h1>Широкоформатная печать</h1></div>
+                    <form>
+                        <div class="main-content--large calc-fields">
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label for="print-quality-select" class="label calc-label has-text-left">
+                                        Качество печати <a href="#" class="question-link">?</a>
+                                    </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="select">
+                                        <select id="print-quality-select">
+                                            <option>Стандартное</option>
+                                            <option>Улучшенное</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label for="material-select" class="label calc-label has-text-left">
+                                        Материал <a href="#" class="question-link">?</a>
+                                    </label>
+                                </div>
+                                <div class="field-body">
+                                    <div class="select">
+                                        <select id="material-select">
+                                            <option>Баннер Китай (330 гр/м2)</option>
+                                            <option>Баннер Китай (440 гр/м2)</option>
+                                            <option>Баннер Корея (440 гр/м2)</option>
+                                            <option>Баннер Канада (440 гр/м2)</option>
+                                            <option>Баннер Канада (500 гр/м2)</option>
+                                            <option>Баннер транслюцентный (510 гр/м2)</option>
+                                            <option>Сетка баннерная (370 гр/м2)</option>
+                                            <option>Пленка белая матовая Германия</option>
+                                            <option>Пленка белая глянцевая Германия</option>
+                                            <option>Пленка прозрачная матовая Германия</option>
+                                            <option>Пленка прозрачная глянцевая Германия</option>
+                                            <option>Пленка перфорированная</option>
+                                            <option>Пленка транслюцентная</option>
+                                            <option>Бумага BlueBack (115 гр/м2)</option>
+                                            <option>Бумага постерная (150 гр/м2)</option>
+                                            <option>Полиэстер (135 гр/м2)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Размеры изделия <a href="#" class="question-link">?</a>
+                                    </label>
+                                </div>
+                                <div class="field-body calc-field-body is-block-tablet is-flex-widescreen">
+                                    <div class="field calc-sizes level">
+                                        <div class="level-left is-flex">
+                                            <input
+                                                type="text"
+                                                class="input calc-input calc-input--small calc-sizes__input has-text-weight-semibold"
+                                                placeholder="Размер по горизонтали"
+                                            />
+                                            <span class="calc-text has-text-weight-semibold">x</span>
+                                        </div>
+                                    </div>
+                                    <div class="field calc-sizes level">
+                                        <div class="level-left is-flex">
+                                            <input
+                                                type="text"
+                                                class="input calc-input calc-input--small calc-sizes__input has-text-weight-semibold"
+                                                placeholder="Размер по вертикали"
+                                            />
+                                            <span class="calc-text has-text-weight-semibold">мм</span>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="calc-notice calc-warning is-size-7 has-text-grey-dark">
+                                            Вносите размеры правильно, от этого зависит расчет стоимости
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Поля <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body calc-field-body is-block-tablet is-flex-desktop">
+                                    <div class="field calc-sizes level">
+                                        <div class="level-left is-flex">
+                                            <input
+                                                type="text"
+                                                class="input calc-input calc-input--small has-text-weight-semibold has-text-right"
+                                                placeholder="50"
+                                                value="50"
+                                            />
+                                            <span class="calc-text has-text-weight-semibold">мм</span>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <span class="calc-notice is-size-7 is-italic has-text-grey-dark"
+                                            >До 5 см включительно - бесплатно</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Ламинация <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body calc-field-body">
+                                    <div class="field radio-field">
+                                        <input
+                                            type="radio"
+                                            name="radio-1"
+                                            value="1"
+                                            id="radio-1-1"
+                                            class="radio"
+                                            checked=""
+                                        />
+                                        <label for="radio-1-1" class="table-label">нет</label>
+                                    </div>
+                                    <div class="field radio-field">
+                                        <input
+                                            type="radio"
+                                            name="radio-1"
+                                            value="2"
+                                            id="radio-1-2"
+                                            class="radio"
+                                        />
+                                        <label for="radio-1-2" class="table-label">матовая</label>
+                                    </div>
+                                    <div class="field radio-field">
+                                        <input
+                                            type="radio"
+                                            name="radio-1"
+                                            value="3"
+                                            id="radio-1-3"
+                                            class="radio"
+                                            disabled
+                                        />
+                                        <label for="radio-1-3" class="table-label">глянцевая</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Резка плоттерная <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body level">
+                                    <div class="level-left">
+                                        <input
+                                            type="checkbox"
+                                            name="сheckbox-1"
+                                            value="1"
+                                            id="checkbox-1-1"
+                                            class="checkbox"
+                                        />
+                                        <label for="checkbox-1-1">да</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Проклейка периметра <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body">
+                                    <button class="button is-outlined">Настроить</button>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Карман <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body">
+                                    <button class="button is-outlined">Настроить</button>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Люверсы <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body">
+                                    <button class="button is-outlined">Настроить</button>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left"
+                                        >Тираж <a href="#" class="question-link">?</a></label
+                                    >
+                                </div>
+                                <div class="field-body level">
+                                    <div class="level-left is-flex">
+                                        <input
+                                            type="text"
+                                            class="input calc-input calc-input--short has-text-weight-semibold has-text-right"
+                                            placeholder="2"
+                                            value="2"
+                                        />
+                                        <span class="calc-text has-text-weight-semibold">шт</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field is-horizontal">
+                                <div class="field-label is-normal">
+                                    <label class="label calc-label has-text-left">
+                                        Цветопроба <a href="#" class="question-link">?</a>
+                                    </label>
+                                </div>
+                                <div class="field-body level">
+                                    <div class="level-left">
+                                        <input
+                                            type="checkbox"
+                                            name="сheckbox-2"
+                                            value="1"
+                                            id="checkbox-2-1"
+                                            class="checkbox"
+                                            checked
+                                        />
+                                        <label for="checkbox-2-1">да</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.calc-fields -->
+                        <div class="infoblock has-background-light">
+                            <div class="columns">
+                                <div class="column is-narrow">
+                                    <div class="calc-label infoblock-title has-text-weight-semibold">
+                                        Итого
+                                    </div>
+                                </div>
+                                <div class="column is-narrow-tablet">
+                                    <div class="calc-sum level is-mobile is-size-1 has-text-weight-semibold">
+                                        <div class="level-left">
+                                            <div class="calc-sum__number has-text-right">22 548,55</div>
+                                            руб
+                                        </div>
+                                        <a
+                                            href="#modal-1"
+                                            class="button calc-sum__button is-text is-small is-secondary modal-button"
+                                        >
+                                            Развернуть расчет
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="buttons calc-actions">
+                                        <button
+                                            type="button"
+                                            class="button calc-actions__button is-primary is-large"
+                                        >
+                                            Добавить в корзину
+                                        </button>
+                                        <button
+                                            type="reset"
+                                            class="button calc-actions__button is-secondary is-size-7 is-outlined"
+                                        >
+                                            Сбросить данные
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.columns -->
+                        </div>
+                        <!-- /.infoblock -->
+                    </form>
+                </div>
+                <!-- /.container -->
+            </main>
+            <!-- /.main -->
+            <footer class="footer">
+                <div class="container">
+                    <p class="copyright is-size-7">&copy; 2007 - 2018, Афиша-Медиа, ООО</p>
+                </div>
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.sticky-footer -->
+        <div id="modal-1" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="content">
+                    <h2>Расчет стоимости</h2>
+                    <hr />
+                </div>
+                <div class="table table--stacked-mobile modal-content__table is-fullwidth is-narrow">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Вид услуги</td>
+                                <td>Широкоформатная печать</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Качество печати</td>
+                                <td>Стандартное</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Материал</td>
+                                <td>Баннер Корея (440 гр/м2)</td>
+                            </tr>
+                            <tr>
+                                <td>Размеры изделия (мм)</td>
+                                <td>10 000 х 9 000 мм</td>
+                                <td>19 м2/td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Стоимость печати</strong></td>
+                                <td>175 руб / м2</td>
+                                <td>3 325 руб</td>
+                            </tr>
+                            <tr>
+                                <td>Склейка по изображению</td>
+                                <td>27 м</td>
+                                <td>1 350 руб</td>
+                            </tr>
+                            <tr>
+                                <td>Поля <em>(до 5 см - бесплатно)</em></td>
+                                <td>5 см</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Ламинация</td>
+                                <td>—</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Резка плоттерная</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Проклейка периметра</td>
+                                <td>28 м</td>
+                                <td>840 руб</td>
+                            </tr>
+                            <tr>
+                                <td>Карман</td>
+                                <td>50 мм - 10 м</td>
+                                <td>300 руб</td>
+                            </tr>
+                            <tr>
+                                <td>Люверсы</td>
+                                <td>12 мм - 93 шт</td>
+                                <td>930 руб</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Цветопроба</td>
+                                <td>да</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><strong>Цена изделия</strong></td>
+                                <td>6 745 руб</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Тираж</td>
+                                <td>2 шт</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Общая стоимость Заказа</td>
+                                <td>13 490,00 руб</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.table -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    <script type="text/javascript" src="js/script.js"></script></body>
+</html>

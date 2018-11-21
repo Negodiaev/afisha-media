@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Корзина | Афиша-Медиа</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600"
+            rel="stylesheet"
+            media="all and (min-width: 960px)"
+        />
+    </head>
+
+    <body>
+        <div class="sticky-footer">
+            <header id="header" class="header">
+                <nav class="navbar" aria-label="main navigation">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="/">
+                                <img src="images/logo.png" width="189" height="40" alt="" />
+                            </a>
+                            <a
+                                role="button"
+                                class="navbar-burger burger"
+                                aria-label="menu"
+                                aria-expanded="false"
+                                data-target="navbar-menu"
+                            >
+                                <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <!-- /.navbar-brand -->
+                        <div id="navbar-menu" class="navbar-menu">
+                            <div class="navbar-end nav-menu is-flex-touch">
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="calc.html" class="nav-link">Онлайн-калькулятор</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="directory.html" class="nav-link">Справочник</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="contacts.html" class="nav-link">Контакты</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="#" class="nav-link">Прайс</a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab is-active">
+                                    <a href="cart.html" class="nav-link level is-mobile">
+                                        <div class="level-left is-mobile">
+                                            <svg
+                                                viewBox="28.500001907348633 37.5 142.99899291992188 124.99998474121094"
+                                                height="25"
+                                                width="28"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                data-type="color"
+                                                role="img"
+                                                preserveAspectRatio="xMidYMid meet"
+                                            >
+                                                <g>
+                                                    <path
+                                                        d="M93.331 142.92c-5.392 0-9.78 4.392-9.78 9.79 0 5.399 4.388 9.79 9.78 9.79 5.392 0 9.779-4.392 9.779-9.79 0-5.399-4.387-9.79-9.779-9.79z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                    <path
+                                                        d="M129.502 142.92c-5.392 0-9.779 4.392-9.779 9.79 0 5.399 4.386 9.79 9.779 9.79 5.392 0 9.78-4.392 9.78-9.79 0-5.399-4.387-9.79-9.78-9.79z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                    <path
+                                                        d="M63.386 66.861c-.19 0-.377.012-.561.037l-5.34-17.343-28.696-11.967c-.095-.039-.192-.056-.289-.088v9.113l22.092 9.212 23.849 77.455h76.515l20.543-66.42H63.386zm81.355 57.977H80.665L65.414 75.304h94.648l-15.321 49.534z"
+                                                        fill="#00303f"
+                                                        data-color="1"
+                                                    ></path>
+                                                </g>
+                                            </svg>
+                                            <div
+                                                class="link-sum link-sum--right is-size-5 has-text-link has-text-right"
+                                            >
+                                                <span class="link-sum__number">0</span> руб
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="navbar-item nav-item is-tab">
+                                    <a href="#" class="nav-link nav-link--secondary is-size-6"
+                                        >name@domen.ru</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-menu -->
+                    </div>
+                    <!-- /.container -->
+                </nav>
+                <!-- /.navbar -->
+            </header>
+            <!-- /.header -->
+            <main class="main cart-main">
+                <div class="section">
+                    <div class="container">
+                        <div class="table table--stacked-mobile is-fullwidth is-size-7">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Информация по заказу</th>
+                                        <th>Размеры (мм)</th>
+                                        <th>Стоимость (руб)</th>
+                                        <th colspan="3">Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Баннер Корея (440 гр/м2)</td>
+                                        <td>ШФ, стандарт</td>
+                                        <td>10 000 х 9 000</td>
+                                        <td><div class="has-text-weight-semibold">13 490,00</div></td>
+                                        <td>
+                                            <div class="file">
+                                                <label class="file-label">
+                                                    <input
+                                                        id="file-1"
+                                                        class="file-input"
+                                                        type="file"
+                                                        name="resume"
+                                                    />
+                                                    <span class="file-cta is-size-7 is-paddingless"
+                                                        ><span id="filename-1" class="file-label"
+                                                            >Прикрепить файл</span
+                                                        ></span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="button is-text is-small modal-button">
+                                                Развернуть расчет
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                class="button is-text is-small is-secondary no-decoration"
+                                                >Удалить</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пленка белая глянцевая Германия</td>
+                                        <td>ШФ, стандарт</td>
+                                        <td>1 000 х 1 500</td>
+                                        <td><div class="has-text-weight-semibold">1 428,00</div></td>
+                                        <td>
+                                            <div class="file">
+                                                <label class="file-label">
+                                                    <input
+                                                        id="file-2"
+                                                        class="file-input"
+                                                        type="file"
+                                                        name="resume"
+                                                    />
+                                                    <span class="file-cta is-size-7 is-paddingless"
+                                                        ><span id="filename-2" class="file-label"
+                                                            >Прикрепить файл</span
+                                                        ></span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="button is-text is-small modal-button">
+                                                Развернуть расчет
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                class="button is-text is-small is-secondary no-decoration"
+                                                >Удалить</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Баннер Корея (440 гр/м2)</td>
+                                        <td>ИНТ, стандарт</td>
+                                        <td>1 000 х 2 000</td>
+                                        <td><div class="has-text-weight-semibold">2 372,00</div></td>
+                                        <td>
+                                            <div class="file">
+                                                <label class="file-label">
+                                                    <input
+                                                        id="file-3"
+                                                        class="file-input"
+                                                        type="file"
+                                                        name="resume"
+                                                    />
+                                                    <span class="file-cta is-size-7 is-paddingless"
+                                                        ><span id="filename-3" class="file-label"
+                                                            >Прикрепить файл</span
+                                                        ></span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="button is-text is-small modal-button">
+                                                Развернуть расчет
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                class="button is-text is-small is-secondary no-decoration"
+                                                >Удалить</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пленка белая глянцевая Германия</td>
+                                        <td>ИНТ, стандарт</td>
+                                        <td>1 000 х 1 500</td>
+                                        <td><div class="has-text-weight-semibold">2 595,00</div></td>
+                                        <td>
+                                            <div class="file">
+                                                <label class="file-label">
+                                                    <input
+                                                        id="file-4"
+                                                        class="file-input"
+                                                        type="file"
+                                                        name="resume"
+                                                    />
+                                                    <span class="file-cta is-size-7 is-paddingless"
+                                                        ><span id="filename-4" class="file-label"
+                                                            >Прикрепить файл</span
+                                                        ></span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="button is-text is-small modal-button">
+                                                Развернуть расчет
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                class="button is-text is-small is-secondary no-decoration"
+                                                >Удалить</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Пластик ПВХ 3мм</td>
+                                        <td>ИНТ, стандартт</td>
+                                        <td>1 000 х 1 500</td>
+                                        <td><div class="has-text-weight-semibold">6 053,00</div></td>
+                                        <td>
+                                            <div class="file">
+                                                <label class="file-label">
+                                                    <input
+                                                        id="file-5"
+                                                        class="file-input"
+                                                        type="file"
+                                                        name="resume"
+                                                    />
+                                                    <span class="file-cta is-size-7 is-paddingless"
+                                                        ><span id="filename-5" class="file-label"
+                                                            >Прикрепить файл</span
+                                                        ></span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="button is-text is-small modal-button">
+                                                Развернуть расчет
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="#"
+                                                class="button is-text is-small is-secondary no-decoration"
+                                                >Удалить</a
+                                            >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.section -->
+                <div class="cart-result section">
+                    <div class="container">
+                        <div class="infoblock cart-result has-background-light">
+                            <div class="columns">
+                                <div class="column is-narrow-desktop">
+                                    <div
+                                        class="infoblock-title infoblock-title--fixed-desktop has-text-weight-semibold"
+                                    >
+                                        Итого
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div
+                                        class="calc-sum level is-mobile is-marginless is-size-1 has-text-weight-semibold"
+                                    >
+                                        <div class="level-left">
+                                            <div class="calc-sum__number has-text-right">22 548,55</div>
+                                            руб
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="field radio-field">
+                                        <input
+                                            type="radio"
+                                            name="radio-1"
+                                            value="1"
+                                            id="radio-1-1"
+                                            class="radio"
+                                            checked
+                                        />
+                                        <label for="radio-1-1" class="table-label weight-medium"
+                                            >Без доставки</label
+                                        >
+                                    </div>
+                                    <div class="field radio-field">
+                                        <input
+                                            type="radio"
+                                            name="radio-1"
+                                            value="2"
+                                            id="radio-1-2"
+                                            class="radio"
+                                        />
+                                        <label for="radio-1-2" class="table-label weight-medium"
+                                            >С доставкой по тарифу такси</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="column is-narrow">
+                                    <div class="buttons calc-actions">
+                                        <button
+                                            type="button"
+                                            class="button calc-actions__button is-primary is-large"
+                                        >
+                                            Оформить заказ
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.columns -->
+                        </div>
+                        <!-- /.infoblock -->
+                        <p class="is-size-7 has-text-right-tablet has-text-grey-dark">
+                            Срок исполнения Заказа - в течение суток. Точное время уточните по тел. 257-62-93
+                        </p>
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.cart-result -->
+            </main>
+            <!-- /.main -->
+            <footer class="footer">
+                <div class="container">
+                    <p class="copyright is-size-7">&copy; 2007 - 2018, Афиша-Медиа, ООО</p>
+                </div>
+            </footer>
+            <!-- /.footer -->
+        </div>
+        <!-- /.sticky-footer -->
+        <script>
+            var map;
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: { lat: 58.012093, lng: 56.187005 },
+                    zoom: 13,
+                    disableDefaultUI: true,
+                    scrollwheel: false,
+                    navigationControl: false,
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<div>Афиша-Медиа</div>'
+                });
+
+                var marker = new google.maps.Marker({
+                    position: { lat: 58.012093, lng: 56.187005 },
+                    map: map,
+                    title: 'Афиша-Медиа'
+                });
+
+                infowindow.open(map, marker);
+            }
+        </script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBBV7bHzXujhrXUQoCCYlnPG5y-U9414&amp;callback=initMap"
+            async
+            defer
+        ></script>
+        <script src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
+    </body>
+</html>

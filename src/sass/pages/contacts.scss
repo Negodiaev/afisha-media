@@ -1,0 +1,19 @@
+.contact-form {
+    border: 1px solid $primary;
+    padding: rem-calc(20);
+    border-radius: $radius;
+    input,
+    textarea {
+        border-color: $border-hover;
+        @include placeholder {
+            color: $text-light;
+        }
+    }
+}
+.contact-form__button-submit {
+    height: rem-calc(40);
+    @include tablet {
+        width: 100%;
+        max-width: rem-calc(302);
+    }
+}

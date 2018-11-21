@@ -1,0 +1,24 @@
+.hero-body {
+    padding: rem-calc(30) 0;
+}
+.hero-title {
+    font-size: rem-calc(23);
+    @include tablet {
+        font-size: rem-calc(44);
+    }
+}
+.text-slider {
+    overflow: hidden;
+    max-width: rem-calc(360);
+    height: rem-calc(135);
+    @include tablet {
+        max-width: rem-calc(700);
+        height: rem-calc(155);
+    }
+}
+.text-slide-content {
+    font-size: rem-calc(18);
+    @include tablet {
+        font-size: rem-calc(34);
+    }
+}

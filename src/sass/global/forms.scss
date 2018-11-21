@@ -1,0 +1,196 @@
+input,
+textarea,
+select,
+button {
+    font-weight: $body-weight;
+    transition: all $speed $easing;
+}
+input,
+textarea {
+    @include placeholder {
+        // color: $text-light;
+    }
+}
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.button {
+    height: auto;
+}
+.button {
+    &.is-text {
+        padding: 0;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &.is-secondary {
+        color: $secondary;
+        &:hover,
+        &:focus {
+            color: $secondary;
+        }
+        &.is-outlined {
+            &:hover,
+            &:focus {
+                border-color: $secondary;
+            }
+        }
+    }
+    &.is-secondary-hover {
+        &:hover,
+        &:focus {
+            border-color: $secondary;
+            color: $secondary;
+        }
+    }
+    &.no-decoration {
+        text-decoration: none;
+        &.is-secondary {
+            &:hover,
+            &:focus {
+                color: $danger;
+            }
+        }
+    }
+}
+.select {
+    select {
+        min-width: rem-calc(185);
+        &:not([multiple]) {
+            padding-right: rem-calc(25);
+        }
+    }
+    &:not(.is-multiple) {
+        &:not(.is-loading) {
+            &:after {
+                right: 0.5rem;
+                margin-top: rem-calc(-5);
+                width: 0;
+                height: 0;
+                border: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 10px solid $text;
+                border-radius: 0;
+                transform: none;
+            }
+            &:hover {
+                &:after {
+                    border-color: transparent;
+                    border-top-color: $text;
+                }
+            }
+        }
+    }
+}
+.checkbox {
+    position: absolute;
+    left: -9999px;
+    pointer-events: none;
+    & + label {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding-left: 25px;
+        font-size: 1rem;
+        line-height: 15px;
+        font-weight: $weight-semibold;
+        white-space: nowrap;
+        cursor: pointer;
+        user-select: none;
+        // color: $border;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $border;
+            font-family: sans-serif;
+            text-align: center;
+            color: $grey;
+            transform: translateY(-50%);
+        }
+        &:empty {
+            padding-left: 15px;
+        }
+        &.weight-medium {
+            font-weight: $weight-medium;
+        }
+    }
+    &:checked {
+        & + label {
+            color: $text;
+            &:before {
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS45OCAxMS45OCI+PHRpdGxlPmNoZWNrLW1hcms8L3RpdGxlPjxnIGlkPSJlOTQ3NzZkMS01ZTE4LTQyYjgtODZmMC00ODg5MTU0ZmM2ODgiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IjZiMmVkNTkwLTJlMjYtNDlhYy04ZDk2LTAwODJkNDcyMGQyNCIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBwb2ludHM9IjE1Ljk4IDEuNjggMTQuMjYgMCA1LjI4IDguNzMgMS43MiA1LjI4IDAgNi45NiA1LjE3IDExLjk4IDUuNTQgMTEuNjMgNS42NCAxMS43MyAxNS45OCAxLjY4IiBzdHlsZT0iZmlsbDojMjAzODkzO2ZpbGwtcnVsZTpldmVub2RkIi8+PC9nPjwvZz48L3N2Zz4=);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 90%;
+            }
+        }
+    }
+    &[disabled] {
+        & + label {
+            cursor: not-allowed;
+            color: $border;
+        }
+    }
+}
+.radio {
+    @extend .checkbox;
+    & + label {
+        padding-left: 28px;
+        &:before {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-size: 34px;
+            line-height: 17px;
+            font-weight: $weight-semibold;
+        }
+        &:empty {
+            padding-left: 18px;
+        }
+    }
+    &:checked {
+        & + label {
+            &:before {
+                content: '\2022';
+                background-image: none;
+            }
+        }
+    }
+}
+.file-label,
+.file-cta {
+    background-color: transparent;
+}
+.file-label {
+    &:hover,
+    &:focus,
+    &:active {
+        .file-cta {
+            color: $link;
+            background-color: transparent;
+        }
+        .file-cta--secondary {
+            color: $secondary;
+        }
+    }
+}
+.file-cta {
+    border: 0;
+    text-decoration: underline;
+    color: $link;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+.file-cta--secondary {
+    color: $secondary;
+}

@@ -1,0 +1,17 @@
+.menu-list {
+    a {
+        display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
+        &[href] {
+            text-decoration: underline;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+        &:not([href]) {
+            cursor: text;
+        }
+    }
+}

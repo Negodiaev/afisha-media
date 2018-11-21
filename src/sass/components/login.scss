@@ -1,0 +1,59 @@
+.login {
+    @include tablet {
+        position: relative;
+        max-width: rem-calc(280);
+    }
+}
+.login-box {
+    padding-bottom: rem-calc(20);
+    @include tablet {
+        box-shadow: 0 0 1px $border;
+    }
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+.login-box__control {
+    &.has-icons-left,
+    &.has-icons-right {
+        .input {
+            &:focus {
+                & ~ .icon {
+                    color: $input-icon-color;
+                }
+            }
+        }
+    }
+    &.has-icons-right {
+        .input {
+            padding-right: 3rem;
+        }
+    }
+}
+.login-box__input {
+    border-color: $border-hover;
+    @include placeholder {
+        color: $text-light;
+    }
+    &:hover {
+        border-color: $border-hover;
+    }
+    &:focus {
+        border-color: $input-border-color;
+    }
+}
+.login-box__input-icon {
+    margin-right: $column-gap;
+    svg {
+        cursor: default;
+    }
+}
+.login-box__help {
+    @include tablet {
+        position: absolute;
+        bottom: rem-calc(12);
+        left: 100%;
+        width: rem-calc(428);
+        background-color: $background;
+    }
+}

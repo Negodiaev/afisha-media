@@ -1,0 +1,4 @@
+@function rem-calc($size) {
+    $remSize: ceil($size / 14 * 10000) / 10000;
+    @return #{$remSize}rem;
+}
