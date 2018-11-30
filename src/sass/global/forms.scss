@@ -144,13 +144,26 @@ textarea {
     @extend .checkbox;
     & + label {
         padding-left: 28px;
+        &:before,
+        &:after {
+            content: '';
+            border-radius: 50%;
+        }
         &:before {
             width: 18px;
             height: 18px;
-            border-radius: 50%;
             font-size: 34px;
             line-height: 17px;
             font-weight: $weight-semibold;
+        }
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 4px;
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            transform: translateY(-50%);
         }
         &:empty {
             padding-left: 18px;
@@ -159,8 +172,10 @@ textarea {
     &:checked {
         & + label {
             &:before {
-                content: '\2022';
                 background-image: none;
+            }
+            &:after {
+                background-color: $grey;
             }
         }
     }

@@ -105,6 +105,12 @@
     background-position: 50% 50%;
     background-size: 20px 20px;
 }
+.question-link--centered {
+    vertical-align: bottom;
+    @include tablet {
+        vertical-align: middle;
+    }
+}
 .to-top {
     position: fixed;
     position: sticky;
@@ -120,5 +126,37 @@
     height: rem-calc(300);
     @include tablet {
         height: 100%;
+    }
+}
+.perimeter {
+    width: rem-calc(60);
+    height: rem-calc(30);
+    border: 3px solid $border;
+}
+.perimeter--full {
+    border-color: $primary;
+}
+.perimeter--top {
+    border-top-color: $primary;
+}
+.perimeter--right {
+    border-right-color: $primary;
+}
+.perimeter--bottom {
+    border-bottom-color: $primary;
+}
+.perimeter--left {
+    border-left-color: $primary;
+}
+.level-col-left {
+    flex-shrink: 1;
+    label {
+        white-space: normal;
+    }
+}
+.level-col-right {
+    width: rem-calc(104);
+    .calc-input--short {
+        width: rem-calc(60);
     }
 }

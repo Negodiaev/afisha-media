@@ -22,6 +22,9 @@
         max-width: rem-calc(600);
     }
 }
+.modal-content--narrow {
+    max-width: rem-calc(320);
+}
 .modal-content--with-bottom {
     @include tablet {
         padding-bottom: rem-calc(75);
@@ -49,6 +52,7 @@
     }
 }
 .modal-bottom {
+    background-color: $white;
     @include tablet {
         overflow: hidden;
         position: absolute;
