@@ -53,6 +53,8 @@
 }
 .modal-bottom {
     background-color: $white;
+}
+.modal-bottom--fixed {
     @include tablet {
         overflow: hidden;
         position: absolute;
